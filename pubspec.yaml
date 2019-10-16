@@ -1,0 +1,37 @@
+name: flutter_tess_todo
+description: Tess TODO
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.0.0-dev.68.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^0.1.2
+  shared_preferences: ^0.4.3
+  flutter_material_color_picker: ^0.0.5
+  flutter_page_indicator: 0.0.3
+  connectivity: ^0.3.1
+  firebase_core: ^0.2.5
+  firebase_auth: ^0.5.20
+  firebase_database: ^1.0.4
+  firebase_messaging: ^2.0.0
+  cloud_firestore: ^0.8.0
+  google_sign_in: ^3.2.2
+  unicorndial: ^1.1.5
+  path_provider: 0.4.1
+  barcode_scan: ^0.0.4
+  qr_flutter: ^2.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
+
+  assets:
+  - app_icon.png

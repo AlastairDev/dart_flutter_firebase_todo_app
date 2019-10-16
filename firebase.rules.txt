@@ -1,0 +1,19 @@
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /private_todo/{userId}/tasks/{taskName} {
+      allow read, write: if request.auth.uid == userId;
+    }
+    match /private_todo/{userId}/common_tasks/{taskName} {
+      allow read, write: if request.auth.uid == userId;
+    }
+    match /private_todo {
+      allow read, write;
+    }
+    match /shared_todo/{document} {
+      allow read, write;
+    }
+    match /shared_todo {
+      allow read, write: if false;
+    }
+  }
+}
