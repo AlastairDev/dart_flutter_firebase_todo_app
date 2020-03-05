@@ -1,5 +1,5 @@
 ## Tess TODO
-Dart \ Firebase
+Dart \ Firebase \ qr codes \ NFC
 
 ![img](https://i.ibb.co/xzmJj0k/photo-2019-10-16-15-51-29.jpg)
 
